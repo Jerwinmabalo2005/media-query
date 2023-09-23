@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    .parent-container > p {
+    background: rgba(108, 106, 106, 1);
+    border: 1px solid white;
+    padding: 20px;
+
+}
+.parent-container  {
+    max-width: 1200px;
+    margin: 20px auto;
+    background: black;
+    padding: 5px;
+    display: grid; 
+    grid-template-columns:repeat(8, 1fr);
+    gap: 10px;
+    
+}
+.parent-container > p:nth-child(1){
+    grid-column: span 1;
+} 
+.parent-container > p:nth-child(2){
+    grid-column: span 2;
+    
+}
+.parent-container > p:nth-child(3){
+    grid-column: span 3;
+} 
+.parent-container > p:nth-child(4){
+    grid-column: span 2;
+} 
+.parent-container > p:nth-child(5){
+    grid-column: span 1;
+}
+
+.parent-container > p:nth-child(6){
+    grid-column: span 5;
+    grid-row-start: span 2;
+} 
+
+.parent-container > p:nth-child(7){
+    grid-column: span 2;
+} 
+
+.parent-container > p:nth-child(8){
+    grid-column: span 1;
+} 
+
+    </style>
+</head>
+<body>
+  <section class="parent-container">
+  <p>Test 1</p>
+  <p>Test 2</p>
+  <p>Test 3</p>
+  <p>Test 4</p>
+  <p>Test 5</p>
+  <p>Test 6</p>
+  <p>Test 7</p>
+  <p>Test 8</p>
+  </section>
+</body>
+</html>
