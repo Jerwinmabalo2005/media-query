@@ -15,10 +15,11 @@ body{
   
 }
 .card{
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     padding: 20px;
     width: 300px;
     grid-template-rows: auto auto 1fr;
+    background-color: orange;
 }
 .card img{
     width: 259px;
